@@ -3,28 +3,12 @@ import singleSpaVue from 'single-spa-vue';
 import { createRouter,createWebHistory } from "vue-router";
 import { h, createApp } from "vue";
 
-import App from "./App.vue";
-
-const routes = [
-  { path: "/" },
-];
-
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes,
-})
-
 const vueLifecycles = singleSpaVue({
   createApp,
   appOptions: {
     render() {
-      return h(App, {
-        links: this.links,
-      });
+      return h(<></>);
     },
-  },
-  handleInstance: (app) => {
-    app.use(router);
   },
 });
 
