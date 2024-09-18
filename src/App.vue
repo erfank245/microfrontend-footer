@@ -1,16 +1,12 @@
 <template>
   <div>
-    <nav>
+    <footer>
       <router-link
-        class="logo-link"
+        class="nav-link"
+        active-class="active-nav-link"
         to="/"
       >
-        <img
-          class="logo"
-          alt="logo"
-          src="https://graphicallyapp.ir/MainLogo.png"
-        />
-        <div class="product-name">میکرو-فرانت اند</div>
+        خانه
       </router-link>
       <router-link
         class="nav-link"
@@ -19,7 +15,7 @@
       >
         لینک ۱
       </router-link>
-    </nav>
+    </footer>
   </div>
 </template>
 
@@ -32,22 +28,17 @@ export default {
 </script>
 
 <style scoped>
-nav {
+footer {
   direction: rtl;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  height: 80px;
-  padding: 0 calc(calc(100vw - 700px) / 2);
+  height: 120px;
+  margin: 1rem 0;
+  padding: 2rem calc(calc(100vw - 700px) / 2);
   background-color: white;
   transition: left 0.2s ease-in-out;
-  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  box-shadow: 0 0.2rem 1rem #00000040;
 }
 .navbar-links {
   display: flex;

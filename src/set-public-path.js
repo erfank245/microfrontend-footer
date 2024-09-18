@@ -1,3 +1,3 @@
 import { setPublicPath } from "systemjs-webpack-interop";
 
-setPublicPath("@vue-mf/navbar", 2);
+setPublicPath("@vue-mf/footer", 2);
