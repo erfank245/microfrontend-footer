@@ -1,29 +1,14 @@
 <template>
   <div>
     <footer>
-      <router-link
-        class="nav-link"
-        active-class="active-nav-link"
-        to="/"
-      >
-        خانه
-      </router-link>
-      <router-link
-        class="nav-link"
-        active-class="active-nav-link"
-        to="/link-1"
-      >
-        لینک ۱
-      </router-link>
+      این یک فوتر است که به صورت جداگانه در صفحه خانه ایمپورت شده است
     </footer>
   </div>
 </template>
 
 <script>
 export default {
-  props: {
-    links: Array,
-  },
+  
 };
 </script>
 
